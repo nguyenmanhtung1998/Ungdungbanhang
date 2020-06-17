@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:gravity="center"
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imagedongchitiet"
+        android:adjustViewBounds="true"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </ImageView>
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="ten mon hang"
+            android:textColor="@color/mauchuden"
+            android:id="@+id/texttenmonhan"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Giamonhang"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Giá"
+            android:textColor="@color/mauchudo"
+            android:textSize="20sp"></TextView>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dongtru"
+            android:focusable="false"
+            android:textSize="30sp"
+            android:text="-"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content">
+        </Button>
+            <Button
+                android:id="@+id/dongsoluong"
+                android:gravity="center"
+                android:background="@null"
+                android:focusable="false"
+                android:textSize="30sp"
+                android:text="1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content">
+            </Button>
+            <Button
+                android:id="@+id/dongcong"
+                android:focusable="false"
+                android:textSize="30sp"
+                android:text="+"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

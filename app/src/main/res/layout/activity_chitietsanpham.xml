@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#CE3E28"
+        app:title="Giỏ hàng"
+        android:id="@+id/toolbarchitietgiohang"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/thongbaohetdulieu"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:text="Giỏ hàng bạn đang rỗng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <ListView
+                android:id="@+id/listviewchitietgiohang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tongtien"
+                android:textColor="@color/mauchudo"
+                android:textSize="25sp"
+                android:gravity="left|center"
+                android:text="TỔNG TIỀN: "
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </TextView>
+            <TextView
+                android:id="@+id/giatri"
+                android:textColor="@color/mauchudo"
+                android:gravity="right|center"
+                android:textSize="25sp"
+                android:text="GIÁ TRỊ "
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/thanhtoangiohang"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:text="Thanh Toán Giỏ Hàng"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </Button>
+    <Button
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:id="@+id/tieptucmuahang"
+        android:layout_weight="1"
+        android:text="Tiếp Tục Mua Hàng"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </Button>
+</LinearLayout>

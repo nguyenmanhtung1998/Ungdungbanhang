@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:background="#CE3E28"
+    app:titleTextColor="@color/mauchuden"
+    android:id="@+id/toolbargiohang"
+    android:layout_height="?attr/actionBarSize">
+</androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/hínhanhgiohang"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ImageView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/chitietsp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/mauchuden"
+                android:text="Chi tiet san pham"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/giasp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Gia sp"
+                android:textColor="@color/mauchudo"
+                android:textSize="20sp"></TextView>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:textAlignment="center"
+                android:background="@drawable/spinner"
+                android:padding="5dp"
+                android:layout_margin="3dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/spiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.appcompat.widget.AppCompatSpinner>
+            <Button
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:id="@+id/buttonthemgiohang"
+                android:text="Thêm Giỏ Hàng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#22AFA2"
+            android:layout_marginTop="5dp"
+            android:text="Mô tả chi tiết sản phẩm"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/motasp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
